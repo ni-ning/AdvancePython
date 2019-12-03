@@ -49,3 +49,22 @@
     # 可以当做函数的返回值
     deco_bar = decorator_func()
     deco_bar('deco_bar')
+
+
+-------------------------------
+小试牛刀
+-------------------------------
+
+实际项目中定义Model来管理存储的数据，可以在Model层之上加一些元操作函数，如get，update，delete等等
+
+定义handle接收函数预处理数据
+
+.. code-block:: py
+
+    def get_record_by_id(_id, handle=None):
+        record = Model.get(id=_id)
+        if not record:
+            return False, '无相关记录'
+        if handle:
+            record = handle(record)
+        return True, record.to_dict
