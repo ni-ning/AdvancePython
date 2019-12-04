@@ -7,7 +7,7 @@
 Python 高级编程
 ================================================
 
-Contents:
+Contents
 
 .. toctree::
    :maxdepth: 2
