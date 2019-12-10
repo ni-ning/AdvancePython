@@ -11,7 +11,9 @@ from collections.abc import *
 - Iterable: __iter__
 - Reversible: __reversed__
 - Sized: __len__
-- container: __contains__
-- Collection: Sized, Iterable, container
+- Container: __contains__
+- Collection: Sized, Iterable, Container
 - Sequence: __getitem__, Reversible, Collection
 - MutableSequence: __setitem__, __delitem__, Sequence
+
+不同魔法函数的组合，构建不同的类型
