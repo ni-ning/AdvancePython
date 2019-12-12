@@ -2,8 +2,6 @@
 8.1 property 动态属性
 ===============================
 
-- 元类可以控制类的实例化过程
-
 .. code-block:: py
 
     from datetime import date
@@ -31,3 +29,8 @@
         print(user.age)     # @property 用变量的方式去封装逻辑
         user.age = 100      # @age.setter 接收参数
         print(user.get_age())   # self._age 实例内部有存储的变量 _age
+
+
+- 对外展示 user.age; 内部存储 self._age
+- 动态属性 property 内部有更多的逻辑操作空间
+- user.age = 100 仔细体会内部处理过程
