@@ -124,3 +124,11 @@
         user = User(name='linda')
         user.age = 20
         user.save()
+
+
+ORM 设计思想
+
+- 数据属性描述符(__set__, __get__) 实现验证操作
+- 自定义元类(MetaClass(type)) 实现参数注入
+- 自定义 ORM 类(BaseModel) 获取元类注入的参数 进行额外操作
+- 自定义元类 注入 objects
