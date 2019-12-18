@@ -67,4 +67,4 @@
         """
 
 - Comanpy实例化的对象为可迭代对象，可用for循环遍历数据，内部实现了__iter__方法，该方法返回迭代器
-- MyIterator实现化对象为迭代器，可用next()获取获取，内部实现了__iter__和__next__方法
+- MyIterator实现化对象为迭代器，可用next()获取数值，内部实现了__iter__和__next__方法
